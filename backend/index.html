@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Load Balancer Dashboard</title>
+
+<style>
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#0f172a;
+  color:#e2e8f0;
+}
+
+header{
+  padding:15px 20px;
+  font-size:18px;
+  font-weight:600;
+  background:#020617;
+  border-bottom:1px solid #1e293b;
+}
+
+.container{
+  display:grid;
+  grid-template-columns:280px 1fr;
+  gap:15px;
+  padding:15px;
+}
+
+.card{
+  background:#020617;
+  border:1px solid #1e293b;
+  border-radius:10px;
+  padding:15px;
+}
+
+h3{
+  margin:0 0 10px 0;
+  font-size:14px;
+  color:#94a3b8;
+}
+
+button{
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:6px;
+  border:none;
+  cursor:pointer;
+  margin:3px;
+}
+
+.request{
+  background:#2563eb;
+  color:white;
+  width:100%;
+}
+
+.on-btn{
+  background:#16a34a;
+  color:white;
+}
+
+.off-btn{
+  background:#dc2626;
+  color:white;
+}
+
+.status-on{
+  color:#16a34a;
+  font-weight:bold;
+}
+
+.status-off{
+  color:#dc2626;
+  font-weight:bold;
+}
+
+.server-box{
+  padding:10px;
+  border:1px solid #1e293b;
+  border-radius:8px;
+  margin-bottom:10px;
+  transition:.2s;
+}
+
+.server-box.active{
+  border-color:#2563eb;
+  background:rgba(37,99,235,.1);
+}
+
+.badge{
+  font-size:11px;
+  padding:3px 8px;
+  border-radius:5px;
+}
+
+.hit{
+  background:#14532d;
+  color:#22c55e;
+}
+
+.miss{
+  background:#7f1d1d;
+  color:#ef4444;
+}
+
+.expired{
+  background:#78350f;
+  color:#facc15;
+}
+
+.progress{
+  height:6px;
+  background:#1e293b;
+  border-radius:6px;
+  margin-top:10px;
+  overflow:hidden;
+}
+
+.progress-bar{
+  height:100%;
+  width:100%;
+  background:#2563eb;
+  transition:width 1s linear;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>Load Balancer Dashboard</header>
+
+<div class="container">
+
+<div class="card">
+
+  <h3>Request</h3>
+
+  <button class="request" onclick="sendRequest()">
+    Send Request
+  </button>
+
+  <p id="response">--</p>
+
+  <p id="time">--</p>
+
+  <p id="cache">--</p>
+
+  <div class="progress">
+    <div id="progressBar" class="progress-bar"></div>
+  </div>
+
+</div>
+
+<div class="card">
+
+  <h3>Servers</h3>
+
+  <div id="serverList"></div>
+
+</div>
+
+</div>
+
+<script>
+
+const BASE = "http://localhost:4000";
+
+let interval;
+
+async function toggleServer(name, action){
+
+  try{
+
+    await fetch(
+      BASE + "/" + action + "/" + name,
+      {
+        method:"POST"
+      }
+    );
+
+    updateStatus();
+  }
+
+  catch(err){
+
+    console.log(err);
+  }
+}
+
+async function sendRequest(){
+
+  try{
+
+    await fetch(BASE + "/track");
+
+    let res = await fetch("http://localhost");
+
+    let data = await res.json();
+
+    let cache =
+      res.headers.get("x-cache-status") || "MISS";
+
+    document.getElementById("response")
+      .innerText =
+      "Server : " + data.server;
+
+    document.getElementById("time")
+      .innerText =
+      "Time : " + data.time;
+
+    let el =
+      document.getElementById("cache");
+
+    if(cache === "HIT"){
+
+      el.innerHTML =
+      "<span class='badge hit'>HIT</span>";
+    }
+
+    else if(cache === "MISS"){
+
+      el.innerHTML =
+      "<span class='badge miss'>MISS</span>";
+    }
+
+    else{
+
+      el.innerHTML =
+      "<span class='badge expired'>" + cache + "</span>";
+    }
+
+    highlight(data.server);
+
+    startProgress(5);
+  }
+
+  catch(err){
+
+    console.log(err);
+
+    document.getElementById("response")
+      .innerText = "Backend Down";
+  }
+}
+
+function highlight(name){
+
+  document
+    .querySelectorAll(".server-box")
+    .forEach(el=>{
+
+      el.classList.remove("active");
+
+      if(el.dataset.name === name){
+
+        el.classList.add("active");
+      }
+    });
+}
+
+function startProgress(sec){
+
+  clearInterval(interval);
+
+  let bar =
+    document.getElementById("progressBar");
+
+  let width = 100;
+
+  interval = setInterval(()=>{
+
+    width -= 100/sec;
+
+    bar.style.width = width + "%";
+
+    if(width <= 0){
+
+      clearInterval(interval);
+
+      bar.style.width = "100%";
+    }
+
+  },1000);
+}
+
+async function updateStatus(){
+
+  try{
+
+    let res = await fetch(
+      BASE + "/status?t=" + Date.now()
+    );
+
+    let data = await res.json();
+
+    let html = "";
+
+    data.servers.forEach(s=>{
+
+      html += `
+      <div class="server-box"
+           data-name="${s.name}">
+
+        <b>${s.name}</b> (${s.port})
+
+        <br><br>
+
+        ${
+          s.running
+          ? "<span class='status-on'>ON</span>"
+          : "<span class='status-off'>OFF</span>"
+        }
+
+        <br><br>
+
+        <button
+          class="on-btn"
+          onclick="toggleServer('${s.name}','start')">
+          ON
+        </button>
+
+        <button
+          class="off-btn"
+          onclick="toggleServer('${s.name}','stop')">
+          OFF
+        </button>
+
+      </div>
+      `;
+    });
+
+    document.getElementById("serverList")
+      .innerHTML = html;
+  }
+
+  catch(err){
+
+    console.log(err);
+  }
+}
+
+updateStatus();
+
+setInterval(updateStatus,2000);
+
+</script>
+
+</body>
+</html>

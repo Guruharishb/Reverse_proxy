@@ -1,0 +1,248 @@
+2026/05/14 02:40:27 [error] 13832#2396: *1 CreateFile() "C:\Users\Divesh\OneDrive\Desktop\reverse\nginx-1.31.0/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2026/05/14 03:52:23 [notice] 20864#25824: signal process started
+2026/05/14 03:52:38 [error] 23796#24156: *8 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/14 03:52:40 [error] 23796#24156: *10 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3001/", host: "localhost"
+2026/05/14 03:52:40 [error] 23796#24156: *8 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3002/", host: "localhost"
+2026/05/14 03:52:42 [error] 23796#24156: *10 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3003/", host: "localhost"
+2026/05/14 03:52:42 [error] 23796#24156: *10 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 03:52:42 [error] 23796#24156: *14 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3003/", host: "localhost"
+2026/05/14 03:52:42 [error] 23796#24156: *14 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 03:52:42 [error] 23796#24156: *16 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3002/", host: "localhost"
+2026/05/14 03:52:42 [error] 23796#24156: *8 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3003/", host: "localhost"
+2026/05/14 03:52:43 [error] 23796#24156: *19 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3003/", host: "localhost"
+2026/05/14 03:52:43 [error] 23796#24156: *21 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3003/", host: "localhost"
+2026/05/14 03:52:44 [error] 23796#24156: *14 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 03:52:58 [error] 23796#24156: *14 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3003/", host: "localhost"
+2026/05/14 03:53:00 [error] 23796#24156: *14 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3002/", host: "localhost"
+2026/05/14 03:53:02 [error] 23796#24156: *14 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3001/", host: "localhost"
+2026/05/14 03:53:30 [error] 23796#24156: *14 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3003/", host: "localhost"
+2026/05/14 03:53:47 [error] 23796#24156: *31 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3001/", host: "localhost"
+2026/05/14 03:53:49 [error] 23796#24156: *31 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3002/", host: "localhost"
+2026/05/14 03:53:51 [error] 23796#24156: *31 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/14 03:53:53 [error] 23796#24156: *31 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3003/", host: "localhost"
+2026/05/14 03:57:25 [notice] 2076#24616: signal process started
+2026/05/14 09:40:09 [error] 6748#7764: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/14 09:40:18 [error] 6748#7764: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3002/", host: "localhost"
+2026/05/14 09:40:20 [error] 6748#7764: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3003/", host: "localhost"
+2026/05/14 09:47:41 [error] 6748#7764: *19 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/14 09:47:43 [error] 6748#7764: *19 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3001/", host: "localhost"
+2026/05/14 09:47:46 [error] 6748#7764: *21 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3002/", host: "localhost"
+2026/05/14 09:47:48 [error] 6748#7764: *21 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3003/", host: "localhost"
+2026/05/14 09:47:48 [error] 6748#7764: *21 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 09:47:57 [error] 6748#7764: *21 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/14 09:48:05 [error] 6748#7764: *21 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3003/", host: "localhost"
+2026/05/14 10:04:13 [error] 6748#7764: *36 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/14 10:04:14 [error] 6748#7764: *38 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3003/", host: "localhost"
+2026/05/14 10:04:15 [error] 6748#7764: *36 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3001/", host: "localhost"
+2026/05/14 10:04:16 [error] 6748#7764: *41 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3001/", host: "localhost"
+2026/05/14 10:04:16 [error] 6748#7764: *38 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3002/", host: "localhost"
+2026/05/14 10:04:16 [error] 6748#7764: *38 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:16 [error] 6748#7764: *38 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:16 [error] 6748#7764: *44 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3001/", host: "localhost"
+2026/05/14 10:04:16 [error] 6748#7764: *44 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:16 [error] 6748#7764: *46 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3002/", host: "localhost"
+2026/05/14 10:04:16 [error] 6748#7764: *48 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3001/", host: "localhost"
+2026/05/14 10:04:17 [error] 6748#7764: *36 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3002/", host: "localhost"
+2026/05/14 10:04:18 [error] 6748#7764: *41 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3002/", host: "localhost"
+2026/05/14 10:04:20 [error] 6748#7764: *44 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:20 [error] 6748#7764: *44 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:20 [error] 6748#7764: *44 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:20 [error] 6748#7764: *44 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:21 [error] 6748#7764: *44 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:21 [error] 6748#7764: *44 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:21 [error] 6748#7764: *44 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:21 [error] 6748#7764: *44 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:21 [error] 6748#7764: *44 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:21 [error] 6748#7764: *44 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:22 [error] 6748#7764: *44 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:22 [error] 6748#7764: *44 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:22 [error] 6748#7764: *44 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:22 [error] 6748#7764: *44 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:23 [error] 6748#7764: *44 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:23 [error] 6748#7764: *44 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:24 [error] 6748#7764: *38 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:24 [error] 6748#7764: *38 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:24 [error] 6748#7764: *38 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:24 [error] 6748#7764: *38 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:25 [error] 6748#7764: *54 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:25 [error] 6748#7764: *54 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:26 [error] 6748#7764: *44 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/14 10:04:26 [error] 6748#7764: *44 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:27 [error] 6748#7764: *38 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3003/", host: "localhost"
+2026/05/14 10:04:29 [error] 6748#7764: *38 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3001/", host: "localhost"
+2026/05/14 10:04:31 [error] 6748#7764: *38 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3002/", host: "localhost"
+2026/05/14 10:04:31 [error] 6748#7764: *38 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:04:46 [error] 6748#7764: *38 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3002/", host: "localhost"
+2026/05/14 10:04:54 [error] 6748#7764: *38 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3003/", host: "localhost"
+2026/05/14 10:04:54 [error] 6748#7764: *44 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/14 10:05:59 [error] 6748#7764: *44 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3002/", host: "localhost"
+2026/05/14 10:06:00 [error] 6748#7764: *38 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3001/", host: "localhost"
+2026/05/14 10:06:00 [error] 6748#7764: *38 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:00 [error] 6748#7764: *38 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:00 [error] 6748#7764: *38 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:00 [error] 6748#7764: *38 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:00 [error] 6748#7764: *38 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:00 [error] 6748#7764: *38 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:00 [error] 6748#7764: *38 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:00 [error] 6748#7764: *38 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:00 [error] 6748#7764: *54 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/14 10:06:00 [error] 6748#7764: *54 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:01 [error] 6748#7764: *54 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:01 [error] 6748#7764: *66 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3003/", host: "localhost"
+2026/05/14 10:06:01 [error] 6748#7764: *66 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:01 [error] 6748#7764: *68 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3001/", host: "localhost"
+2026/05/14 10:06:01 [error] 6748#7764: *68 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:01 [error] 6748#7764: *44 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3001/", host: "localhost"
+2026/05/14 10:06:01 [error] 6748#7764: *44 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:01 [error] 6748#7764: *71 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3001/", host: "localhost"
+2026/05/14 10:06:01 [error] 6748#7764: *71 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:21 [error] 6748#7764: *54 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:21 [error] 6748#7764: *54 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:21 [error] 6748#7764: *54 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:21 [error] 6748#7764: *54 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:22 [error] 6748#7764: *54 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:22 [error] 6748#7764: *71 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3001/", host: "localhost"
+2026/05/14 10:06:22 [error] 6748#7764: *71 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:22 [error] 6748#7764: *44 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3002/", host: "localhost"
+2026/05/14 10:06:22 [error] 6748#7764: *44 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:23 [error] 6748#7764: *68 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3003/", host: "localhost"
+2026/05/14 10:06:23 [error] 6748#7764: *68 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:06:23 [error] 6748#7764: *66 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/14 10:06:23 [error] 6748#7764: *66 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:08:37 [error] 6748#7764: *77 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3001/", host: "localhost"
+2026/05/14 10:08:39 [error] 6748#7764: *77 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/14 10:08:41 [error] 6748#7764: *77 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3003/", host: "localhost"
+2026/05/14 10:08:43 [error] 6748#7764: *77 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3002/", host: "localhost"
+2026/05/14 10:09:18 [error] 6748#7764: *89 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:09:18 [error] 6748#7764: *89 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:09:18 [error] 6748#7764: *89 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:09:19 [error] 6748#7764: *77 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3001/", host: "localhost"
+2026/05/14 10:09:19 [error] 6748#7764: *77 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:09:19 [error] 6748#7764: *79 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3002/", host: "localhost"
+2026/05/14 10:09:19 [error] 6748#7764: *79 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:09:19 [error] 6748#7764: *85 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3003/", host: "localhost"
+2026/05/14 10:09:19 [error] 6748#7764: *85 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:09:20 [error] 6748#7764: *87 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/14 10:09:20 [error] 6748#7764: *87 no live upstreams while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://backend_servers/", host: "localhost"
+2026/05/14 10:12:06 [notice] 18588#11600: signal process started
+2026/05/14 10:12:56 [notice] 20624#4492: signal process started
+2026/05/14 10:13:06 [notice] 21812#15668: signal process started
+2026/05/14 10:13:26 [notice] 9196#19132: signal process started
+2026/05/14 10:13:36 [notice] 10952#16624: signal process started
+2026/05/14 12:01:08 [notice] 17768#15980: signal process started
+2026/05/14 12:01:16 [notice] 12592#6844: signal process started
+2026/05/14 12:01:20 [notice] 11180#5856: signal process started
+2026/05/14 12:01:20 [error] 11180#5856: CreateFile() "C:\Users\Divesh\OneDrive\Desktop\reverse\nginx-1.31.0/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2026/05/14 12:01:52 [notice] 7452#20960: signal process started
+2026/05/14 12:02:10 [notice] 23684#9412: signal process started
+2026/05/14 12:02:24 [notice] 2724#16892: signal process started
+2026/05/14 12:04:34 [notice] 8108#19376: signal process started
+2026/05/14 12:04:54 [notice] 16872#10868: signal process started
+2026/05/14 12:06:24 [notice] 10220#24032: signal process started
+2026/05/14 12:06:34 [notice] 22716#20040: signal process started
+2026/05/14 12:08:14 [notice] 4592#24332: signal process started
+2026/05/14 12:08:24 [notice] 6472#15824: signal process started
+2026/05/14 12:10:04 [notice] 21944#25752: signal process started
+2026/05/14 12:10:24 [notice] 7868#17596: signal process started
+2026/05/14 12:11:10 [notice] 17188#20428: signal process started
+2026/05/14 12:11:30 [notice] 12816#15484: signal process started
+2026/05/14 12:11:40 [notice] 3768#13508: signal process started
+2026/05/14 12:12:00 [notice] 23916#7540: signal process started
+2026/05/14 12:12:10 [notice] 12380#12420: signal process started
+2026/05/14 13:48:31 [notice] 8676#13884: signal process started
+2026/05/14 13:48:31 [error] 8676#13884: OpenEvent("Global\ngx_reload_14792") failed (2: The system cannot find the file specified)
+2026/05/14 13:49:53 [notice] 8944#19860: signal process started
+2026/05/14 13:50:33 [notice] 22384#2984: signal process started
+2026/05/14 13:50:43 [notice] 20372#6008: signal process started
+2026/05/14 13:50:53 [notice] 3292#13372: signal process started
+2026/05/14 13:51:03 [notice] 21224#11608: signal process started
+2026/05/14 13:51:23 [notice] 15700#21192: signal process started
+2026/05/14 13:51:33 [notice] 10796#16212: signal process started
+2026/05/14 13:51:43 [notice] 11664#1988: signal process started
+2026/05/14 13:51:53 [notice] 788#18872: signal process started
+2026/05/14 14:31:57 [notice] 14072#13500: signal process started
+2026/05/14 14:32:05 [notice] 17924#20428: signal process started
+2026/05/14 14:32:25 [notice] 21880#17540: signal process started
+2026/05/14 14:32:35 [notice] 22256#22260: signal process started
+2026/05/14 14:32:45 [notice] 17432#17548: signal process started
+2026/05/14 14:32:55 [notice] 11472#13492: signal process started
+2026/05/14 14:33:05 [notice] 4672#12060: signal process started
+2026/05/14 14:33:15 [notice] 23924#23932: signal process started
+2026/05/15 07:12:55 [notice] 19848#9052: signal process started
+2026/05/15 07:12:55 [error] 19848#9052: OpenEvent("Global\ngx_reload_21396") failed (2: The system cannot find the file specified)
+2026/05/15 07:14:11 [notice] 17316#4704: signal process started
+2026/05/15 07:20:57 [notice] 18408#14620: signal process started
+2026/05/15 07:23:54 [notice] 22164#18032: signal process started
+2026/05/15 07:28:21 [notice] 20392#26224: signal process started
+2026/05/15 07:28:32 [emerg] 10256#24396: no servers are inside upstream in C:\Users\Divesh\OneDrive\Desktop\reverse\nginx-1.31.0/conf/nginx.conf:16
+2026/05/15 07:28:35 [error] 24320#8612: *7 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/15 07:28:46 [notice] 5268#21968: signal process started
+2026/05/15 07:28:51 [notice] 23844#14052: signal process started
+2026/05/15 07:29:00 [notice] 10504#7420: signal process started
+2026/05/15 07:29:01 [notice] 24104#23164: signal process started
+2026/05/15 07:29:10 [notice] 2332#20060: signal process started
+2026/05/15 07:29:11 [notice] 9984#14536: signal process started
+2026/05/15 07:29:12 [error] 21840#14860: *19 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3001/", host: "localhost"
+2026/05/15 07:29:21 [notice] 24836#20984: signal process started
+2026/05/15 07:29:31 [notice] 19436#9312: signal process started
+2026/05/15 07:29:41 [notice] 9896#9304: signal process started
+2026/05/15 07:35:00 [notice] 10544#2316: signal process started
+2026/05/15 07:35:20 [notice] 8968#15800: signal process started
+2026/05/15 07:35:30 [notice] 10292#10808: signal process started
+2026/05/15 07:36:10 [notice] 22144#20408: signal process started
+2026/05/15 07:36:20 [notice] 19984#8904: signal process started
+2026/05/15 07:36:30 [notice] 19748#6280: signal process started
+2026/05/15 07:36:40 [notice] 15472#17044: signal process started
+2026/05/15 07:36:50 [notice] 12404#24004: signal process started
+2026/05/15 07:37:00 [notice] 8148#22108: signal process started
+2026/05/15 07:37:10 [notice] 24832#9028: signal process started
+2026/05/15 07:37:20 [notice] 3312#24080: signal process started
+2026/05/15 07:37:30 [notice] 9240#17412: signal process started
+2026/05/15 07:37:40 [notice] 20828#12108: signal process started
+2026/05/15 07:38:00 [notice] 17132#26140: signal process started
+2026/05/15 07:38:10 [notice] 22308#8712: signal process started
+2026/05/15 07:39:42 [notice] 11704#7276: signal process started
+2026/05/15 07:39:48 [emerg] 11808#20468: no servers are inside upstream in C:\Users\Divesh\OneDrive\Desktop\reverse\nginx-1.31.0/conf/nginx.conf:16
+2026/05/15 07:39:51 [error] 22164#13688: *60 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/15 07:39:54 [error] 22164#13688: *60 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/15 07:39:56 [error] 22164#13688: *62 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/15 07:39:58 [error] 22164#13688: *60 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/15 07:40:00 [error] 22164#13688: *62 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/15 07:40:02 [notice] 17976#25192: signal process started
+2026/05/15 07:40:12 [notice] 19344#13484: signal process started
+2026/05/15 07:40:22 [notice] 25424#24308: signal process started
+2026/05/15 07:40:32 [notice] 11292#15756: signal process started
+2026/05/15 07:40:42 [notice] 10712#17584: signal process started
+2026/05/15 07:40:46 [notice] 4080#17560: signal process started
+2026/05/15 07:40:52 [notice] 26396#25032: signal process started
+2026/05/15 07:41:02 [notice] 2672#13772: signal process started
+2026/05/15 09:14:56 [emerg] 11800#4976: host not found in upstream "localhost:3000" in C:\Users\Divesh\OneDrive\Desktop\reverse\nginx-1.31.0/conf/nginx.conf:16
+2026/05/15 09:15:14 [emerg] 13240#9768: host not found in upstream "localhost:3000" in C:\Users\Divesh\OneDrive\Desktop\reverse\nginx-1.31.0/conf/nginx.conf:16
+2026/05/15 09:15:31 [emerg] 12744#13624: host not found in upstream "localhost:3000" in C:\Users\Divesh\OneDrive\Desktop\reverse\nginx-1.31.0/conf/nginx.conf:16
+2026/05/15 09:15:40 [emerg] 24628#20012: host not found in upstream "localhost:3000" in C:\Users\Divesh\OneDrive\Desktop\reverse\nginx-1.31.0/conf/nginx.conf:16
+2026/05/15 09:17:33 [notice] 11824#16752: signal process started
+2026/05/15 09:17:33 [error] 11824#16752: OpenEvent("Global\ngx_reload_11464") failed (2: The system cannot find the file specified)
+2026/05/15 09:18:34 [notice] 12824#12792: signal process started
+2026/05/15 09:19:27 [notice] 3632#10540: signal process started
+2026/05/15 09:19:39 [notice] 12228#11784: signal process started
+2026/05/15 09:21:36 [emerg] 25400#13668: no servers are inside upstream in C:\Users\Divesh\OneDrive\Desktop\reverse\nginx-1.31.0/conf/nginx.conf:16
+2026/05/15 09:21:39 [error] 23404#8904: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/15 09:21:53 [error] 23404#8904: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/15 09:21:55 [error] 23404#8904: *3 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/15 09:21:57 [error] 23404#8904: *1 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/15 09:21:59 [error] 23404#8904: *3 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/15 09:21:59 [notice] 7256#7344: signal process started
+2026/05/15 09:22:29 [notice] 23640#26196: signal process started
+2026/05/15 09:22:39 [notice] 15320#13768: signal process started
+2026/05/15 09:22:49 [notice] 4416#9312: signal process started
+2026/05/15 09:22:59 [notice] 19608#8820: signal process started
+2026/05/15 09:23:05 [error] 9792#16636: *14 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3001/", host: "localhost"
+2026/05/15 09:23:10 [notice] 25096#14452: signal process started
+2026/05/15 09:23:12 [notice] 18640#9020: signal process started
+2026/05/15 09:23:16 [error] 25236#9272: *20 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/15 09:23:18 [error] 25236#9272: *21 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/15 09:23:19 [notice] 22012#26048: signal process started
+2026/05/15 09:23:20 [error] 25236#9272: *22 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/15 09:23:22 [error] 25236#9272: *23 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/15 09:23:24 [error] 25236#9272: *24 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost"
+2026/05/15 09:23:39 [emerg] 2120#25520: no servers are inside upstream in C:\Users\Divesh\OneDrive\Desktop\reverse\nginx-1.31.0/conf/nginx.conf:16
